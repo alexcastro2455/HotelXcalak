@@ -1,0 +1,43 @@
+.radiogroup
+{
+	padding: 10px;
+}
+
+.labelstyle
+{
+	font-weight: bold;
+}
+
+.colorSection
+{
+	background-color: white;
+}
+
+.colorFond
+{
+	color: black;
+}
+
+.simpleMargin25
+{
+	margin-top: 25px;
+}
+
+.simplePadding15
+{
+	margin-top: 15px;
+}
+
+.Padding15
+{
+	margin: 1px;
+	padding: 15px 15px;
+	background: rgba(0, 0, 0, 0.03);
+}
+
+.border2
+{
+	border: 2px solid;
+	border-radius: 7px;
+	border-color: #59b759;
+}

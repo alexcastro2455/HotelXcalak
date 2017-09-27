@@ -1,0 +1,45 @@
+
+
+#footer .widgettitle {
+    margin: 0px;
+    padding: 0px 0px 15px;
+    border-bottom: medium none;
+}
+#footer h4 {
+    color: #FFF;
+}
+
+#footer ul {
+    list-style: outside none none;
+}
+
+#footer li {
+    padding: 7px 0px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+    margin: 0px;
+}
+
+#footer li a {
+    color: #DDD;
+}
+
+.myfooter {
+	border: 2px solid #CDB380;
+    margin-top: 60px;
+    clear: both;
+    color: #AAA;
+    background: #031634 none repeat scroll 0% 0%;
+    padding: 2px 0px;
+    position: fixed;
+    bottom: 0;
+}
+
+footer{
+	text-align: center;
+	width: 100%;
+	background-color: #000000;
+	color: #ffffff;
+	line-height: 3;
+	position: fixed;
+	bottom: 0;
+}
