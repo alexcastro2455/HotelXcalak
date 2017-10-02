@@ -1,6 +1,6 @@
 <?php 
-	
+
 	$template = new Smarty();
-	$template->display('home/index.tpl');
+	$template-> display("home/index.tpl");
 
 ?>

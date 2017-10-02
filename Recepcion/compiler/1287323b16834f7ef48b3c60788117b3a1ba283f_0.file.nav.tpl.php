@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-09-27 17:25:11
-  from "C:\xampp\htdocs\SistemaHotelAdmin\Recepcion\styles\templates\overall\nav.tpl" */
+/* Smarty version 3.1.31, created on 2017-09-30 23:57:29
+  from "C:\xampp\htdocs\HotelXcalak\Recepcion\styles\templates\overall\nav.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_59cbc2d79781c2_70393276',
+  'unifunc' => 'content_59d013496997b1_26284901',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '51625f84fd8fd76fe9b1b055d5c6b1838af3769a' => 
+    '1287323b16834f7ef48b3c60788117b3a1ba283f' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\SistemaHotelAdmin\\Recepcion\\styles\\templates\\overall\\nav.tpl',
-      1 => 1506455268,
+      0 => 'C:\\xampp\\htdocs\\HotelXcalak\\Recepcion\\styles\\templates\\overall\\nav.tpl',
+      1 => 1506808198,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59cbc2d79781c2_70393276 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59d013496997b1_26284901 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <header class="my-header">
 		<nav class="container navbar navbar-static-top">
@@ -34,7 +34,7 @@ function content_59cbc2d79781c2_70393276 (Smarty_Internal_Template $_smarty_tpl)
 							<i class="fa fa-bars" aria-hidden="true"></i>
 						</a>
 					</div>
-					<span><b>Xca</b>lak</span>
+					<span>Hotel<b>Xcalak</b></span>
 					<div class="pull-right">
 						<a class="navbar-toggle collapsed btnbarra" data-toggle="collapse" data-target="#barra-menu">
 							<i class="sr-only">Toggle Navigation</i>
@@ -48,7 +48,7 @@ function content_59cbc2d79781c2_70393276 (Smarty_Internal_Template $_smarty_tpl)
 						<ul class="nav navbar-nav my-right-ul">
 							
 						<li>
-							<a href="#" class="mytool" data-toggle="tooltip" data-placement="bottom" data-original-title="Reservaciones">
+							<a href="RBuscarCuarto.html" class="mytool" data-toggle="tooltip" data-placement="bottom" data-original-title="RegistroLlegadas">
 								<i class="fa fa-address-book" aria-hidden="true"></i>
 							</a>
 						</li>
@@ -60,13 +60,13 @@ function content_59cbc2d79781c2_70393276 (Smarty_Internal_Template $_smarty_tpl)
 						</li>
 
 						<li>
-							<a href="#" class="mytool" data-toggle="tooltip" data-placement="bottom" data-original-title="Huespedes">
+							<a href="RAdministrarReservas.html" class="mytool" data-toggle="tooltip" data-placement="bottom" data-original-title="Administrar Reservas">
 								<i class="fa fa-users" aria-hidden="true"></i>
 							</a>
 						</li>
 
 						<li class="dropdown messages-menu">
-							<a href="#" class="dropdown-toggle mytool" data-toggle="tooltip" data-placement="bottom" data-original-title="Mensajes">
+							<a href="REnviarMensajes.html" class="dropdown-toggle mytool" data-toggle="tooltip" data-placement="bottom" data-original-title="Mensajes">
 								<i class="fa fa-bell"></i>
 								<spam class="label label-default">5</spam>
 							</a>
@@ -74,19 +74,19 @@ function content_59cbc2d79781c2_70393276 (Smarty_Internal_Template $_smarty_tpl)
 
 						<li class="dropdowm user-menu">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								<img src="styles/images/xcalak_SF.png" class="user-image">
+								<img src="../images/xcalak_SF.png" class="user-image">
 								<spam class="hidden-xs">WebMaster</spam>
 							</a>
 							<ul class="dropdown-menu">
 								<li class="my-user-header">
-									<img src="styles/images/xcalak_SF.png" class="img-circle">
+									<img src="../images/xcalak_SF.png" class="img-circle">
 									<p>Armando Palacios - Web Developer</p>
 									<small>19 / Septiembre / 2017</small>
 								</li>
 
 								<li class="my-user-footer">
 									<div class="pull-left">
-										 <a href="#" class="btn btn-default"> <i class="fa fa-user"></i> Perfil</a>
+										 <a href="#" class="btn btn-default colorFontBlack"> <i class="fa fa-user"></i> Perfil</a>
 									</div>
 									<div class="pull-right">
 										<a href="#" class="btn btn-default"> <i class="fa fa-power-off"></i> Salir</a>
@@ -119,10 +119,10 @@ function content_59cbc2d79781c2_70393276 (Smarty_Internal_Template $_smarty_tpl)
 					<a href="" class="dropdown-toggle" data-toggle="dropdown">Gerencia <span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
 						<li class="dropdown-header">Opciones de Usuario</li>
-						<li class="my-li-nav"><a href="#">Cátalogo de cuartos</a></li>
-                		<li class="my-li-nav"><a href="#">Cátalogo de servicios</a></li>
-                		<li class="my-li-nav"><a href="#">Cátalogo de promociones</a></li>
-                		<li class="my-li-nav"><a href="#">Cátalogo de empleados</a></li>
+						<li class="my-li-nav"><a href="../Gerencia/GCatalogoHabitaciones.html">Cátalogo de Habitaciones</a></li>
+                		<li class="my-li-nav"><a href="../Gerencia/GCatalogoServicios.html">Cátalogo de servicios</a></li>
+                		<li class="my-li-nav"><a href="../Gerencia/GCatalogoPromociones.html">Cátalogo de promociones</a></li>
+                		<li class="my-li-nav"><a href="../Gerencia/GCatalogoEmpleado.html">Cátalogo de empleados</a></li>
 					</ul>
 				</li>
 			</ul>

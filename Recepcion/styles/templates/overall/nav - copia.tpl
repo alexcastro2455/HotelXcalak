@@ -1,27 +1,3 @@
-<?php
-/* Smarty version 3.1.31, created on 2017-09-26 21:47:53
-  from "C:\xampp\htdocs\SistemaHotel\Recepcion\styles\templates\overall\nav.tpl" */
-
-/* @var Smarty_Internal_Template $_smarty_tpl */
-if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.31',
-  'unifunc' => 'content_59caaee9a4ae03_62101073',
-  'has_nocache_code' => false,
-  'file_dependency' => 
-  array (
-    '0968f5610a9f92ae9133566765e8a7894e0cd23e' => 
-    array (
-      0 => 'C:\\xampp\\htdocs\\SistemaHotel\\Recepcion\\styles\\templates\\overall\\nav.tpl',
-      1 => 1506455268,
-      2 => 'file',
-    ),
-  ),
-  'includes' => 
-  array (
-  ),
-),false)) {
-function content_59caaee9a4ae03_62101073 (Smarty_Internal_Template $_smarty_tpl) {
-?>
 <header class="my-header">
 		<nav class="container navbar navbar-static-top">
 			<div class="navbar-header">
@@ -127,5 +103,4 @@ function content_59caaee9a4ae03_62101073 (Smarty_Internal_Template $_smarty_tpl)
 				</li>
 			</ul>
 		</div>
-	</div> <!--termina wrapper--><?php }
-}
+	</div> <!--termina wrapper-->

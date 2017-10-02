@@ -1,26 +1,26 @@
 /*Logo y Header*/
 .my-header
 {
-	max-height: 100px;
-	background-color: #008000;
+    max-height: 100px;
+    background-color: #008000;
 }
 
 /*Pone estilo al encabezado del menu*/
 .my-header .my-logo
 {
-	webkit-transition: width 0.9s cubic-bezier(0.81, -0.05, 0.24, 1.31);
-	-o-transition: width 0.9s ease-in-out;
-	transition: width 0.9s cubic-bazier(0.81, -0.05, 0.24, 1.31);
-	display: block;
-	float: left;
-	height: 50px;
-	font-size: 20px;
-	line-height: 50px;
-	text-align: center;
-	width: 230px;
-	padding: 0 15px;
-	font-weight: 300;
-	overflow: hidden;
+    webkit-transition: width 0.9s cubic-bezier(0.81, -0.05, 0.24, 1.31);
+    -o-transition: width 0.9s ease-in-out;
+    transition: width 0.9s cubic-bazier(0.81, -0.05, 0.24, 1.31);
+    display: block;
+    float: left;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    width: 230px;
+    padding: 0 15px;
+    font-weight: 300;
+    overflow: hidden;
 }
 
 /*_____________________*/
@@ -29,27 +29,27 @@
 
 .my-div-right
 {
-	float: right;
-	position: absolute;
-	right: 1px;
+    float: right;
+    position: absolute;
+    right: 1px;
 }
 /*__________*/
 
 /*---ALERTA ICONO DE NOTIFICACION--------*/
 .my-header .navbar .nav > li > a > .label
 {
-	position: absolute;
-	top: 9px;
-	right: 7px;
-	text-align: center;
-	font-size: 9px;
-	padding: 2px 3px;
-	line-height: .9;
+    position: absolute;
+    top: 9px;
+    right: 7px;
+    text-align: center;
+    font-size: 9px;
+    padding: 2px 3px;
+    line-height: .9;
 }
 
 .label-default
 {
-	background-color: #f13720;
+    background-color: #f13720;
 }
 
 /*-----------------------------*/
@@ -58,16 +58,16 @@
 
 .navbar-nav .user-menu .user-image
 {
-	float: left;
-	width: 25px;
-	height: 25px;
-	border-radius: 50%;
-	margin-top: -2px;
+    float: left;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-top: -2px;
 }
 
 .navbar-nav .user-menu .dropdown-menu
 {
-	border-top-right-radius: 0;
+    border-top-right-radius: 0;
     border-top-left-radius: 0;
     padding: 1px 0 0 0;
     border-top-width: 0;
@@ -80,16 +80,16 @@
 
 .navbar-nav .user-menu .dropdown-menu li.my-user-header img
 {
-	height: 90px;
-	width: 90px;
-	border: 3px solid;
-	border-color: transparent;
-	border-color: rgba(255, 255, 255, 0.2);
+    height: 90px;
+    width: 90px;
+    border: 3px solid;
+    border-color: transparent;
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 .navbar-nav .user-menu .dropdown-menu li.my-user-header
 {
-	height: 175px;
+    height: 175px;
     padding: 10px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0,07);
@@ -97,8 +97,8 @@
 
 .navbar-nav .user-menu .dropdown-menu li.my-user-footer
 {
-	background-color: #f9f9f9;
-	padding: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
 }
 
 /*-----------------------------*/
@@ -113,15 +113,15 @@ a:focus, a:hover{
     border-left: 1px groove #1AAE88;    
     border-right: 1px groove #1AAE88;
 }
-a, .my-logo{
+ .my-right-ul a, .my-logo{
     color: #fff;
     text-decoration: none;
 }
-a:hover:focus, .my-logo{
+ a:hover:focus, .my-logo{
     color: #fff;
     text-decoration: none;
 }
-.nav>li>a:focus, .nav>li>a:hover{
+.my-right-ul>li>a:focus, .my-right-ul>li>a:hover{
     text-decoration: none;
     background-color: rgba(8, 8, 8, 0.54);
     color: #1AAE88;

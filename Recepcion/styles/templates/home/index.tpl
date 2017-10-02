@@ -1,78 +1,30 @@
-<!DOCTYPE html>
-<html lang="es">
+{include 'overall/header.tpl'}
+
+<body>
   
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Inicio de sesión Xcalak</title>
+  {include 'overall/nav.tpl'}
 
-    <link rel="stylesheet" href="styles/css/bootstrap.css">    
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.css"> <!--Iconos--> 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500" rel="stylesheet">
-    <link rel="stylesheet" href="styles/css/cssLogin.css">
-  </head>
-
-  
-  <body>
-    <div class="my-content" >
-        <div class="container" > 
-
-            <div class="row">
-              <div class="col-sm-12" >
-                  <h1><strong>Xcalak</strong> Login</h1>
-                  <div class="mydescription">
-                    <p>Bienvenido al inicio de sesión administrativo</p>
-                  </div>
-              </div>
-            </div>
-
-            <div class="row">
-                  <div class="col-sm-6 col-sm-offset-3 myform-cont" >
-                      <div class="myform-top">
-                          <div class="myform-top-left">
-                              <p>Digita tu usuario y contraseña:</p>
-                          </div>
-                          <div class="myform-top-right">
-                            <i class="fa fa-key"></i>
-                          </div>
-                      </div>
-                      <div class="myform-bottom">
-                        <form role="form" action="" method="post" class="">
-                          <div class="form-group">
-                              <input type="text" name="form-username" placeholder="Usuario..." class="form-control" id="form-username">
-                          </div>
-                          <div class="form-group">
-                              <input type="password" name="form-password" placeholder="Contraseña..." class="form-control" id="form-password">
-                          </div>
-                          <a href="?view=reserva"><input class="mybtn" type="button" value="Buscar cuartos"></a>
-                        </form>
-                      </div>
-                  </div>
-            </div>
-
-            <div class="row">
-                 <div class="col-sm-12 mysocial-login">
-                    <h3>...ingresa también por:</h3>
-                    <div class="mysocial-login-buttons" >
-                      <a class="mybtn-social" href="#">
-                      <i class="fa fa-facebook"></i> Facebook
-                      </a>
-                      <a class="mybtn-social" href="#">
-                      <i class="fa fa-twitter"></i> Twitter
-                      </a>
-                      <a class="mybtn-social" href="#">
-                      <i class="fa fa-google-plus"></i> Google Plus
-                      </a>
-                    </div>
-                </div>   
-            </div>
-
+    <section class="container">
+        
+      <div class="row">
+        <div class="col-md-5 col-md-offset-2">
+          <h3><label>Fecha:<span>Gerente<span/></label></h3>
         </div>
-    </div>
+        <div class="col-md-4">
+          <h3><label>Bienvenido <span>Armando Palacios Sanchez<span/></label></h3>
+        </div>
+      </div>
+      <div class="row">
 
-    <script src="styles/js/jquery-3.2.1.min.js"></script>
-    <script src="styles/js/bootstrap.js"></script>
-  </body>
+            
+        <div class="CenterElement">
+          <span class="glyphicon glyphicon-user iconPresentation"></span>
+          <br>
+          <label class="label label-default labelPresentation">Gerente<label/>
+        </div>
 
-</html>
+      </div>
+
+    </section>
+
+    {include 'overall/footer.tpl'}

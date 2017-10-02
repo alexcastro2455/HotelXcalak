@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-09-27 17:25:11
-  from "C:\xampp\htdocs\SistemaHotelAdmin\Recepcion\styles\templates\overall\header.tpl" */
+/* Smarty version 3.1.31, created on 2017-09-30 23:57:29
+  from "C:\xampp\htdocs\HotelXcalak\Recepcion\styles\templates\overall\header.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_59cbc2d7907735_03297583',
+  'unifunc' => 'content_59d013496879f7_88583926',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'b5255c0cb95d5a958d3fdd2e11fd8fa63f59a0f8' => 
+    '401d9328c7f84cd8a672e927dcec6a01681cd68d' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\SistemaHotelAdmin\\Recepcion\\styles\\templates\\overall\\header.tpl',
-      1 => 1506454307,
+      0 => 'C:\\xampp\\htdocs\\HotelXcalak\\Recepcion\\styles\\templates\\overall\\header.tpl',
+      1 => 1506808110,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59cbc2d7907735_03297583 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59d013496879f7_88583926 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="es">

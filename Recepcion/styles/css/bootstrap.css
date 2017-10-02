@@ -2390,6 +2390,7 @@ table th[class*="col-"] {
 .table > tfoot > tr.info > th {
   background-color: #d9edf7;
 }
+
 .table-hover > tbody > tr > td.info:hover,
 .table-hover > tbody > tr > th.info:hover,
 .table-hover > tbody > tr.info:hover > td,
@@ -3057,7 +3058,7 @@ fieldset[disabled] a.btn {
   pointer-events: none;
 }
 .btn-default {
-  color: #333;
+  color: #333 !important;
   background-color: #fff;
   border-color: #ccc;
 }
