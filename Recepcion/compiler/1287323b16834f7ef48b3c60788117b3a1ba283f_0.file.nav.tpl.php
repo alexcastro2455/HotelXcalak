@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-09-30 23:57:29
+/* Smarty version 3.1.31, created on 2017-10-03 19:10:25
   from "C:\xampp\htdocs\HotelXcalak\Recepcion\styles\templates\overall\nav.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_59d013496997b1_26284901',
+  'unifunc' => 'content_59d3c4818ecc30_56228269',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1287323b16834f7ef48b3c60788117b3a1ba283f' => 
     array (
       0 => 'C:\\xampp\\htdocs\\HotelXcalak\\Recepcion\\styles\\templates\\overall\\nav.tpl',
-      1 => 1506808198,
+      1 => 1507050622,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59d013496997b1_26284901 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59d3c4818ecc30_56228269 (Smarty_Internal_Template $_smarty_tpl) {
+if (!is_callable('smarty_modifier_date_format')) require_once 'C:\\xampp\\htdocs\\HotelXcalak\\Recepcion\\core\\libs\\smarty\\plugins\\modifier.date_format.php';
 ?>
 <header class="my-header">
 		<nav class="container navbar navbar-static-top">
@@ -74,14 +75,22 @@ function content_59d013496997b1_26284901 (Smarty_Internal_Template $_smarty_tpl)
 
 						<li class="dropdowm user-menu">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								<img src="../images/xcalak_SF.png" class="user-image">
+								<img src="styles/images/xcalak_SF.png" class="user-image">
 								<spam class="hidden-xs">WebMaster</spam>
 							</a>
+							
 							<ul class="dropdown-menu">
+							<?php if (isset($_SESSION['nombre'])) {?>
+
 								<li class="my-user-header">
-									<img src="../images/xcalak_SF.png" class="img-circle">
-									<p>Armando Palacios - Web Developer</p>
-									<small>19 / Septiembre / 2017</small>
+									<img src="styles/images/xcalak_SF.png" class="img-circle">
+									<p><?php echo $_SESSION['nombre'];?>
+ <?php echo $_SESSION['apellido'];?>
+</p>
+									<p><?php echo $_SESSION['puesto'];?>
+</p>
+									<small><?php echo smarty_modifier_date_format(time(),"%d/%m/%G");?>
+</small>
 								</li>
 
 								<li class="my-user-footer">
@@ -92,6 +101,9 @@ function content_59d013496997b1_26284901 (Smarty_Internal_Template $_smarty_tpl)
 										<a href="#" class="btn btn-default"> <i class="fa fa-power-off"></i> Salir</a>
 									</div>
 								</li>
+							<?php } else { ?>
+								<li><a href="?view=login">Login</a></li>
+							<?php }?>
 							</ul>
 						</li>
 

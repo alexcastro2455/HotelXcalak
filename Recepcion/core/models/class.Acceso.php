@@ -1,6 +1,7 @@
 <?php 
+	include "entidades/EmpleadosEntidad.php";
 
-	public Acceso{
+	class Acceso{
 
 		private $correo;
 		private $password;
@@ -27,26 +28,29 @@
 
 				//definimos que los datos no estén vacíos
 				if(!empty($_POST['correo']) and !empty($_POST['password']) and !empty($_POST['session'])){
-					$db = new Conexion();
-					$this->correo = $db->real_escape_string($_POST['correo']);
-					$this->password = $db->real_escape_string($_POST['password']);//$this->Encrypt($_POST['password']);
+					$db = new Conexion();	
+					$empleados = new EmpleadosEntidad();
+
+					$empleados->correo = $db->real_escape_string($_POST['correo']);
+					$empleados->password = $db->real_escape_string($_POST['password']);//$this->Encrypt($_POST['password']);
 
 
 					//query a la BD consultando las credenciales
-				 	$sql = $db->query("SELECT e.*, pt.puesto, tu.tipoUsuario, su.ubicacion from empleados as e
-										inner join puestos_trabajo as pt
-										on e.puestos_trabajo_idPuestoTrabajo = pt.idPuestoTrabajo
-										inner join tipo_usuario as tu
-										inner join sucursales as su
+				 	$sql = $db->query("SELECT e.*, pt.puesto, tu.tipoUsuario, su.ubicacion FROM empleados as e 
+										INNER JOIN puestos_trabajo as pt 
+										on e.puestos_trabajo_idPuestoTrabajo = pt.idPuestoTrabajo 
+										INNER JOIN tipo_usuario as tu
+										on e.tipo_usuario_idTipoUsuario = tu.idTipoUsuario
+										INNER JOIN sucursales as su 
 										on e.sucursales_idSucursal = su.idSucursal
-										on e.tipo_usuario_idTipoUsuario = tu.idTipoUsuario where correo = '$this->correo' and password= '$this->password';");
-				 	
+										where correo = '$empleados->correo' and password= '$empleados->password';");
+
 
 				 	//método que verifica que si trae un row, quiere decir que si coincidieron las credenciales
-				 	if($db->rows(sql) > 0){
+				 	if($db->rows($sql) > 0){
 
 				 		//guardamos datos en variables de sesión
-				 		$datos = $db->recorrer(sql);
+				 		$datos = $db->recorrer($sql);
 				 		$_SESSION['idEmp'] = $datos['idEmpleado'];
 				 		$_SESSION['nombre'] = $datos['nombre'];
 				 		$_SESSION['apellido'] = $datos['apellido'];
@@ -56,6 +60,7 @@
 				 		$_SESSION['ubicacion'] = $datos['ubicacion'];
 				 		$_SESSION['tipoUsuario'] = $datos['tipoUsuario'];
 				 		$_SESSION['puesto'] = $datos['puesto'];
+				 		$_SESSION['sucursales_idSucursal'] = $datos['sucursales_idSucursal'];
 
 				 		//Método para hacer duraderá la sesión
 						if($_POST['session'] == true) 
@@ -70,7 +75,7 @@
 
 
 					$db->liberar();
-			 		$db->claso();
+			 		$db->close();
 				}else{
 					throw new Exception("Error: Datos vacíos.");
 				}

@@ -8,7 +8,8 @@
 
 			parent::__construct('localhost', 'root', '', 'bd_sistema_hotelero');
 			$this->query("SET NAMES utf8;");
-			$this->connect_errno(oid) ? die('ERROR: conexión a la base de datos fallida') : NULL;
+			//devuelve el código de error de la últila llamada
+			$this->connect_errno ? die('ERROR: Conexión a la base de datos fallida.') : null; 
 
 		}//fin constructor
 
@@ -20,6 +21,7 @@
 			return mysqli_fetch_array($x);
 		}
 
+		//libera la memoria asociada con un resultado
 		public function liberar($x){
 			return mysqli_free_result($x);
 		}

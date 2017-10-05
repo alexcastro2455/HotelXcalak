@@ -87,3 +87,37 @@
 {
     padding: 0 4px;
 }
+
+
+/**Images**/
+.upload
+{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1; 
+}
+
+.upload + label
+{
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+}
+.uploadImg
+{
+    border: 2px dashed #919191;
+    border-radius: 4px;
+    padding: 5px;
+    width: auto;
+    height: 135px;
+    color:green;
+    font:20px Impact;   
+    margin:-1px;
+}
+
+/**End images**/

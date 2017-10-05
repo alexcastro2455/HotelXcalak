@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-10-02 23:50:37
+/* Smarty version 3.1.31, created on 2017-10-03 01:05:29
   from "C:\xampp\htdocs\HotelXcalak\Recepcion\styles\templates\public\login.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_59d2b4ad12c8c0_39625373',
+  'unifunc' => 'content_59d2c639a43fc8_87455769',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b66545392fba5cf20ca5af1637fc0ea4fee05354' => 
     array (
       0 => 'C:\\xampp\\htdocs\\HotelXcalak\\Recepcion\\styles\\templates\\public\\login.tpl',
-      1 => 1506981031,
+      1 => 1506985488,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59d2b4ad12c8c0_39625373 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59d2c639a43fc8_87455769 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -125,18 +125,18 @@ function content_59d2b4ad12c8c0_39625373 (Smarty_Internal_Template $_smarty_tpl)
           connect.onreadystatechange = function(){
 
            
-            ///esta 4 significa que el estado esta completado
+            ///el 4 significa que esta listo para entregar algo
             ///1 cuando esta apenas pidiendo la conexión
             if(connect.readyState == 4 && connect.status == 200){
 
-                //lo que nos devuelva PHP entra en estas variables 
+                //lo que nos devuelva PHP eva a estar en esta variable
                 if(parseInt(connect.responseText) == 1){
                   //conectado con éxito, se redirecciona
                   location.href = '?view=index';
 
                 }else{
                   //ERROR: los datos son incorrectos
-                  imprimirMensaje('class="alert alert-danger"', "Credenciales incorrectas " + connect.readyState + " " + connect.status);
+                  imprimirMensaje('class="alert alert-danger"', "Credenciales incorrectas " + connect.readyState + " " + connect.status + ' ' + connect.responseText);
                 }
 
             }else if(connect.readyState != 4){

@@ -1,3 +1,28 @@
+<?php
+/* Smarty version 3.1.31, created on 2017-10-06 00:11:11
+  from "C:\xampp\htdocs\HotelXcalak\Recepcion\styles\templates\overall\Nav.tpl" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.31',
+  'unifunc' => 'content_59d6adffd16e94_33835340',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '30682f8ab658f451858f1a16c7a852f4d53e7298' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\HotelXcalak\\Recepcion\\styles\\templates\\overall\\Nav.tpl',
+      1 => 1507241375,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_59d6adffd16e94_33835340 (Smarty_Internal_Template $_smarty_tpl) {
+if (!is_callable('smarty_modifier_date_format')) require_once 'C:\\xampp\\htdocs\\HotelXcalak\\Recepcion\\core\\libs\\smarty\\plugins\\modifier.date_format.php';
+?>
 <header class="my-header">
 		<nav class="container navbar navbar-static-top">
 			<div class="navbar-header">
@@ -57,13 +82,17 @@
 								</a>
 								
 								<ul class="dropdown-menu">
-								{if isset($smarty.session.nombre)}
+								<?php if (isset($_SESSION['nombre'])) {?>
 
 									<li class="my-user-header">
 										<img src="styles/images/xcalak_SF.png" class="img-circle">
-										<p>{$smarty.session.nombre} {$smarty.session.apellido}</p>
-										<p>{$smarty.session.puesto}</p>
-										<small>{$smarty.now|date_format:"%d/%m/%G"}</small>
+										<p><?php echo $_SESSION['nombre'];?>
+ <?php echo $_SESSION['apellido'];?>
+</p>
+										<p><?php echo $_SESSION['puesto'];?>
+</p>
+										<small><?php echo smarty_modifier_date_format(time(),"%d/%m/%G");?>
+</small>
 									</li>
 
 									<li class="my-user-footer">
@@ -74,9 +103,9 @@
 											<a href="?view=Logout" class="btn btn-default"> <i class="fa fa-power-off"></i> Salir</a>
 										</div>
 									</li>
-								{else}
+								<?php } else { ?>
 									<li><a href="?view=login">Login</a></li>
-								{/if}
+								<?php }?>
 								</ul>
 							</li>
 
@@ -112,4 +141,5 @@
 				</li>
 			</ul>
 		</div>
-	</div> <!--termina wrapper-->
+	</div> <!--termina wrapper--><?php }
+}

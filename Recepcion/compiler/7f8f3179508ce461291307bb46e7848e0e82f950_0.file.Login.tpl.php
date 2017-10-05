@@ -1,3 +1,27 @@
+<?php
+/* Smarty version 3.1.31, created on 2017-10-05 08:57:28
+  from "C:\xampp\htdocs\HotelXcalak\Recepcion\styles\templates\public\Login.tpl" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.31',
+  'unifunc' => 'content_59d5d7d80c1014_71552749',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '7f8f3179508ce461291307bb46e7848e0e82f950' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\HotelXcalak\\Recepcion\\styles\\templates\\public\\Login.tpl',
+      1 => 1507186643,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_59d5d7d80c1014_71552749 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <html lang="es">
   
@@ -66,11 +90,16 @@
         </div>
     </div>
 
-    <script src="styles/js/jquery-3.2.1.min.js"></script>
-    <script src="styles/js/bootstrap.js"></script>
+    <?php echo '<script'; ?>
+ src="styles/js/jquery-3.2.1.min.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="styles/js/bootstrap.js"><?php echo '</script'; ?>
+>
 
 
-    <script>
+    <?php echo '<script'; ?>
+>
       
       //cuando se cargue toda la página entra esta función
       window.onload = function(){
@@ -139,7 +168,9 @@
         document.getElementById("alertaError").innerHTML = result;
       }
 
-    </script>
+    <?php echo '</script'; ?>
+>
   </body>
 
-</html>
+</html><?php }
+}
